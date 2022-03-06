@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="include/css/main.css">
+	<link rel="shortcut icon" href="include/image/logo64x64.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="include/js/app-products.js" type="module"></script>
+	
+	<title>BirdSHOP - Sklep komputerowy</title>
+</head>
+<body>
+<main>
+	<section class="shop">
+		<div class="dashboard">
+			<a href="index.html">
+				<div id="shopinformation">
+					<img alt="logo" src="include/image/logo2000x1000.png">
+					<h2>BirdSHOP</h2>
+					<p>Sklep Komputerowy</p>
+				</div>
+			</a>
+			<div class="menu-navigation">
+				<a href="koszyk.html">
+					<div class="nav-button">
+						<div class="icon">
+							<img src="include/image/icon-cart.png" alt=""/>
+						</div>
+						<h2>Koszyk</h2>
+						<p class="amountItem-cart"></p>
+					</div>
+				</a>
+				<a href="index.html">
+					<div class="nav-button">
+						<div class="icon">
+							<img src="include/image/icon-home.png" alt=""/>
+						</div>
+						<h2>Powrót</h2>
+					</div>
+				</a>
+			</div>
+			<div class="copyright">
+				<h2>Copyright © 2021</h2>
+				<!-- <img src="" alt="" />-->
+			</div>
+		</div>
+		
+		
+		<div class="products">
+			<div class="titleandsearch">
+				<h1 style="text-align: center">Wyszukaj to czego szukasz!</h1>
+				<label>
+					<input id="search-input" type="text" placeholder="search" />
+				</label>
+			</div>
+			<div class="flex-center">
+				<div class="sorts">
+					<label for="kats"></label>
+					<select name="kat" id="kats">
+						<option value="all" selected="selected">Wszystkie kategorie</option>
+					</select>
+					<label for="subkats"></label>
+					<select name="subkat" id="subkats" style="display: none">
+						<option value="all" selected="selected">Wszystkie podkategorie</option>
+					</select>
+					<label for="sorts"></label>
+					<select name="sort" id="sorts">
+						<option value="random" selected="selected">Losowo</option>
+						<option value="htol">Od najwyższej</option>
+						<option value="ltoh">Od najniższej</option>
+					</select>
+				</div>
+			</div>
+			<div id="search-result"></div>
+			<div class="cards">
+			
+			</div>
+		</div>
+	</section>
+</main>
+<div class="circle1"></div>
+<div class="circle2"></div>
+</body>
+</html>
